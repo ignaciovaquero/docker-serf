@@ -15,4 +15,6 @@ RUN apk update && \
 RUN wget -O /tmp/serf.zip https://releases.hashicorp.com/serf/0.8.0/serf_0.8.0_linux_amd64.zip && \
     unzip /tmp/serf.zip -d /usr/bin/
 
+EXPOSE 7373 7946
+
 ENTRYPOINT ["serf"]
